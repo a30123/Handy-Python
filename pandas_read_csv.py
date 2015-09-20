@@ -11,3 +11,6 @@ All_temp=pd.read_csv(single_file_path)
  
 All_temp=All_temp.convert_objects(convert_numeric=True)
 All_temp[sensor_list]=All_temp[sensor_list].astype('float32')
+
+All=pd.read_csv(single_file_path)
+AA=(np.asarray([All[:][sensor_variable]]))
